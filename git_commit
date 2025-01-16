@@ -1,0 +1,122 @@
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit
+$ git init
+Initialized empty Git repository in C:/Users/SSAFY/Desktop/git_commit/.git/
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ touch a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ rm -rf a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ touch a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git add .
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git commit -m "add a.txt"
+[master (root-commit) d0636eb] add a.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git log
+commit d0636eb32511e1f1766d1bc4136e562c82b0c7fd (HEAD -> master)
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 14:59:57 2025 +0900
+
+    add a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ touch b.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git add .
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   b.txt
+
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git commit -m "add b.txt"
+[master 26abaaa] add b.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 b.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git log
+commit 26abaaa25a81ea7d13353c0fa042149bcf5819fb (HEAD -> master)
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 15:03:36 2025 +0900
+
+    add b.txt
+
+commit d0636eb32511e1f1766d1bc4136e562c82b0c7fd
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 14:59:57 2025 +0900
+
+    add a.txt
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git commit -m "update a.txt"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git add .
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git commit -m "update a.txt"
+[master c5999d7] update a.txt
+ 1 file changed, 1 insertion(+)
+
+SSAFY@DESKTOP-3HB59PA MINGW64 ~/Desktop/git_commit (master)
+$ git log
+commit c5999d7a0fb2623fb1ea23ca7fb152737cd3e33f (HEAD -> master)
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 15:06:15 2025 +0900
+
+    update a.txt
+
+commit 26abaaa25a81ea7d13353c0fa042149bcf5819fb
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 15:03:36 2025 +0900
+
+    add b.txt
+
+commit d0636eb32511e1f1766d1bc4136e562c82b0c7fd
+Author: 남다현 <dhnn1536@naver.com>
+Date:   Wed Jan 15 14:59:57 2025 +0900
+
+    add a.txt
